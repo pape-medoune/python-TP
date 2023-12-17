@@ -1,6 +1,12 @@
 
+"""
+    AUTHOR : Mouhamedoune FALL
+    LGI3 (option génie logiciel)
+    Professeur: Monsieur Diouf
+"""
 
-#First Exercise Done
+
+#Going to do the first Exercise
 def trouverUneCombinaison(number):
     tableau = []
 
@@ -13,8 +19,10 @@ def trouverUneCombinaison(number):
                         tableau.append(combination)
 
     return tableau
+#First Exercise done
 
-#Going to do the  second Exercise
+
+#Exercice 2
 
 #Part 1
 def users_bank_trie_croissant(comptes):
@@ -45,7 +53,9 @@ def users_bank_trie_decroissant(comptes):
 
 #Exercice 2 done
 
-def sommeDeDeuxListe(L1,L2):
+
+#Exercice 3
+def sommeDeDeuxListe(L1, L2):
     nbr1 = ""
     nbr2 = ""
 
@@ -56,6 +66,12 @@ def sommeDeDeuxListe(L1,L2):
         nbr2 = nbr2 + str(L2[i])
 
     return int(nbr1) + int(nbr2)
+
+#Exercice 3 done
+
+#Exercice 4
+def
+#Exercice 4 done
 
 if __name__ == '__main__':
 
@@ -109,6 +125,7 @@ if __name__ == '__main__':
     sommeTwoList = sommeDeDeuxListe(L1, L2)
 
     print(f"La somme des deux liste est {sommeTwoList}")
+
     # Test for the third exercise done successfully
 
 
