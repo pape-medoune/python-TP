@@ -45,6 +45,18 @@ def users_bank_trie_decroissant(comptes):
 
 #Exercice 2 done
 
+def sommeDeDeuxListe(L1,L2):
+    nbr1 = ""
+    nbr2 = ""
+
+    for i in range(0, len(L1)):
+        nbr1 = nbr1 + str(L1[i])
+
+    for i in range(0, len(L2)):
+        nbr2 = nbr2 + str(L2[i])
+
+    return int(nbr1) + int(nbr2)
+
 if __name__ == '__main__':
 
     comptes = [
@@ -83,7 +95,7 @@ if __name__ == '__main__':
 
     print(res2)
 
-    # Test for the second exercise done sucessfully
+    # Test for the second exercise done successfully
 
 
 
@@ -91,9 +103,13 @@ if __name__ == '__main__':
     # Test for the third exercise
 
     """ PART 1 """
+    L1 = [1, 2, 3]
+    L2 = [4, 5, 6]
 
-    """ PART 2 """
-    # Test for the third exercise done sucessfully
+    sommeTwoList = sommeDeDeuxListe(L1, L2)
+
+    print(f"La somme des deux liste est {sommeTwoList}")
+    # Test for the third exercise done successfully
 
 
 
