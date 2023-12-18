@@ -70,8 +70,26 @@ def sommeDeDeuxListe(L1, L2):
 #Exercice 3 done
 
 #Exercice 4
-def
+def somme_couple(T1, indice):
+    tab2 = []
+    k = 0
+    for i in range(0, len(T1)):
+        for j in range(0, len(T1)):
+            res = T1[i] + T1[j]
+            k = k + 1
+            if res == indice:
+                tab2.append((i, j))
+    return tab2
+
+
 #Exercice 4 done
+
+
+
+#Exercice 5
+
+
+#Exercice 5 done
 
 if __name__ == '__main__':
 
@@ -97,8 +115,6 @@ if __name__ == '__main__':
     # Test for the first exercise done sucessfully
 
 
-
-
     #Test for the second exercise
 
     """ PART 1 """
@@ -112,8 +128,6 @@ if __name__ == '__main__':
     print(res2)
 
     # Test for the second exercise done successfully
-
-
 
 
     # Test for the third exercise
@@ -130,3 +144,14 @@ if __name__ == '__main__':
 
 
 
+    # Test for Exercises 4
+
+    tabTest = [-1, -2, -3, 2, 1, 3]
+    sc=[]
+    ind = int(input("Entrer l'indice pour somme_couple"))
+    print(f"Tableau apres avoir fait la somme des couple avec l'indice {ind}")
+    sc = somme_couple(tabTest, ind)
+
+    print(list(set(tuple(sorted(sc)) for sc in sc)))
+
+    # Test for Exercises 4 done
