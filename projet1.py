@@ -1,8 +1,10 @@
 
 """
-    AUTHOR : Mouhamedoune FALL
+    Auteur : Mouhamedoune FALL
     LGI3 (option génie logiciel)
     Professeur: Monsieur Diouf
+    UNIVERSITE IBA DER THIAM DE THIES
+    Année académique: 2023 / 2024
 """
 
 
@@ -92,7 +94,6 @@ def somme_couple(T1, indice):
 #Exercice 5 done
 
 if __name__ == '__main__':
-
     comptes = [
         {'nom': 'Diouf', 'prenom': 'Modou', 'epargne': 2500},
         {'nom': 'Sene', 'prenom': 'Pathé', 'epargne': 5000},
@@ -153,5 +154,25 @@ if __name__ == '__main__':
     sc = somme_couple(tabTest, ind)
 
     print(list(set(tuple(sorted(sc)) for sc in sc)))
-
+ 
     # Test for Exercises 4 done
+
+
+    # Test for Exercises 5
+
+
+    print("Exericeee 5 ! ")
+
+
+
+    sieges = [0, 1, 0, 0, 1, 0, 0, 0, 1]
+    """
+    
+    for i in range(2, len(sieges)-2):
+        if(sieges[i] == 1):
+            if(sieges[i-2] == 0 and sieges[i-1]==0 and sieges[i+1]==0 and sieges[i+2]==0):
+                        
+    """
+    #Initialisation de mon tableau
+
+    # Test for Exercises 5 done
