@@ -89,7 +89,12 @@ def somme_couple(T1, indice):
 
 
 #Exercice 5
-
+def max_distance (sieges):
+    for i in range(2, len(sieges)-2):
+        if(sieges[i] == 1):
+            if(sieges[i-2] == 0 and sieges[i-1]==0 and sieges[i+1]==0 and sieges[i+2]==0 or sieges[i+3]==0 or sieges[i-3]==0):
+                emplacement_libre = i
+    return emplacement_libre
 
 #Exercice 5 done
 
@@ -105,6 +110,7 @@ if __name__ == '__main__':
         {'nom': 'Thioune', 'prenom': 'Ameth', 'epargne': 2200}
     ]
 
+
     # Test for the first exercise
 
     number = int(input("Entrer un nombre:"))
@@ -118,12 +124,12 @@ if __name__ == '__main__':
 
     #Test for the second exercise
 
-    """ PART 1 """
+    """ Part 1 """
     res1 = users_bank_trie_croissant(comptes)
 
     print(res1)
 
-    """ PART 2 """
+    """ Part 2 """
     res2 = users_bank_trie_decroissant(comptes)
 
     print(res2)
@@ -133,7 +139,7 @@ if __name__ == '__main__':
 
     # Test for the third exercise
 
-    """ PART 1 """
+    """ Part 1 """
     L1 = [1, 2, 3]
     L2 = [4, 5, 6]
 
@@ -163,16 +169,15 @@ if __name__ == '__main__':
 
     print("Exericeee 5 ! ")
 
-
-
-    sieges = [0, 1, 0, 0, 1, 0, 0, 0, 1]
-    """
     
-    for i in range(2, len(sieges)-2):
-        if(sieges[i] == 1):
-            if(sieges[i-2] == 0 and sieges[i-1]==0 and sieges[i+1]==0 and sieges[i+2]==0):
-                        
-    """
-    #Initialisation de mon tableau
+
+    # Initialisation de mon tableau
+    sieges = [0, 1, 0, 0, 1, 0, 0, 0, 1]
+    
+    #Test de l'exercice numéro 5
+
+    libre = max_distance(sieges)
+
+    print(f"L'emplacement libre est {libre}")
 
     # Test for Exercises 5 done
